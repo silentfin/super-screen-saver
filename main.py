@@ -1,4 +1,6 @@
 import importlib
+import random
+import os
 
 all_effects = effects = [
     "Beams",
@@ -40,14 +42,17 @@ all_effects = effects = [
 
 with open("logo.txt", "r") as file:
     logo = file.read()
-
-for effect_name in all_effects:
-    module_path = (
-        f"terminaltexteffects.effects.effect_{"_".join(effect_name.lower().split())}"
-    )
-    current_module = importlib.import_module(module_path)
-    effect_class = getattr(current_module, "".join(effect_name.split()))
-    current_effect = effect_class(logo)
-    with current_effect.terminal_output() as terminal:
-        for frame in current_effect:
-            terminal.print(frame)
+try:
+    while True:
+        random.shuffle(all_effects)
+        for effect_name in all_effects:
+            os.system("clear")
+            module_path = f"terminaltexteffects.effects.effect_{"_".join(effect_name.lower().split())}"
+            current_module = importlib.import_module(module_path)
+            effect_class = getattr(current_module, "".join(effect_name.split()))
+            current_effect = effect_class(logo)
+            with current_effect.terminal_output() as terminal:
+                for frame in current_effect:
+                    terminal.print(frame)
+except KeyboardInterrupt:
+    print("Screensaver stopped !")
