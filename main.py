@@ -51,8 +51,12 @@ try:
             current_module = importlib.import_module(module_path)
             effect_class = getattr(current_module, "".join(effect_name.split()))
             current_effect = effect_class(logo)
+            current_effect.terminal_config.canvas_width = 0
+            current_effect.terminal_config.canvas_height = 0
+            current_effect.terminal_config.anchor_text = "c"
             with current_effect.terminal_output() as terminal:
                 for frame in current_effect:
                     terminal.print(frame)
 except KeyboardInterrupt:
+    os.system("clear")
     print("Screensaver stopped !")
