@@ -2,7 +2,7 @@ import importlib
 import random
 import os
 
-all_effects = effects = [
+all_effects = [
     "Beams",
     "BinaryPath",
     "Blackhole",
@@ -59,4 +59,3 @@ try:
                     terminal.print(frame)
 except KeyboardInterrupt:
     os.system("clear")
-    print("Screensaver stopped !")
