@@ -5,17 +5,18 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
 ![demo](sss.gif)
 
 ## Table of Contents
+- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
 ## Installation 
 
-> [!Important]
+> [!IMPORTANT]
 >
-> All commands below should be run in the terminal!
+> All commands below should be run in the terminal.
 
-1. Clone the repository and :  
+1. Clone the repository & move into it:  
    ```bash
    git clone git@github.com:silentfin/super-screen-saver.git
    cd super-screen-saver
@@ -34,7 +35,7 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
      ```  
 
 3. Install dependencies:  
-    >[!Warning]
+    > [!WARNING]
     >
     >Make sure the virtual environment is activated before you run this command.
    ```bash
@@ -42,7 +43,7 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
    ```  
 
 ## Usage
-> [!Caution]
+> [!CAUTION]
 >
 > Activate your virtual environment before running the script.
 - Linux/macOS:  
@@ -54,7 +55,7 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
     python main.py
     ```
 *Press `CTRL + C` to stop the script.*
->[!Tip]
+>[!TIP]
 >
 > Add this alias in your `.bashrc`, `.zshrc` or `.whatever_you_use_rc`
 >
