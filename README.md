@@ -35,11 +35,13 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
      ```  
 
 3. Install dependencies:  
+
     > [!WARNING]
     >
-    >Make sure the virtual environment is activated before you run this command.
+    >Make sure the virtual environment is activated before running the install command.
+
    ```bash
-   pip install terminaltexteffects
+   pip install -r requirements.txt
    ```  
 
 ## Usage
@@ -57,11 +59,11 @@ screensaver script inspired by [omarchy's](https://omarchy.org/) screensaver
 *Press `CTRL + C` to stop the script.*
 >[!TIP]
 >
+>```alias sss='(cd /add_your_path_here/super-screen-saver && source .venv/bin/activate && python3 main.py)'```
+>
 > Add this alias in your `.bashrc`, `.zshrc` or `.whatever_you_use_rc`
 >
 > Replace `/add_your_path_here/super-screen-saver` in the alias with the actual full path where you cloned the repository.
->
->```alias sss='(cd /add_your_path_here/super-screen-saver && source .venv/bin/activate && python3 main.py)'```
 >
 > Reload your terminal after adding the alias.
 >

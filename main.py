@@ -5,7 +5,7 @@ import os
 all_effects = [
     "Beams",
     "BinaryPath",
-    "Blackhole",
+    "Blackhole",  # this effect causes this script to break when it runs a certain number of times
     "BouncyBalls",
     "Bubbles",
     "Burn",
